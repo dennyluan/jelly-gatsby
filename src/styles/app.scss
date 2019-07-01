@@ -1,0 +1,117 @@
+@import 'pokemon.scss';
+@import 'spacing.scss';
+
+$color1: #000;
+$color2: #F66C4E;
+$baseFont:      'Roboto', Helvetica, Arial;
+$serifFont:     'Lora', Georgia, serif;
+$PTSerif:       'PT Serif', Georgia, serif;
+
+.container {
+  display: block;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $baseFont;
+}
+
+h1 {
+  // font-family: $serifFont;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+pre {
+  font-size: 12px;
+}
+
+h1, p, a {
+  color: $color1;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+a {
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $color2;
+  transition-duration: 0.2s;
+}
+
+p {
+  font-size: 22px;
+}
+
+.center {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 5vh;
+}
+
+ul {
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+  li {
+    display: inline;
+    font-size: 18px;
+    margin: 0 30px 0 0;
+    padding: 0;
+  }
+}
+
+#home {
+}
+
+#about {
+
+  table {
+    width: 80%;
+
+    b {
+      padding-top: 14px;
+      display: block;
+    }
+
+    h4 {
+      font-size: 16px;
+      display: table-cell;
+    }
+
+    span {
+      display: table-cell;
+    }
+
+    tr {    
+      td {
+        padding: 4px 0;
+        vertical-align: top;
+      }
+      :first-child{
+        min-width: 110px;
+        column-width: 110px;
+        padding-right: 40px;
+      }
+    }
+
+  }
+}
